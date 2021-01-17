@@ -7,20 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Task: feed de date din tmdb.org
+## Task: datafeed from tmdb.org
 
-Intro aplicatie pe laravel, trebuie sa preluam feed de date din TMDB si sa il returnam ca si raspuns JSON. La fiecare element din lista vom formata sa se returneze doar:
-descrierea, numele si poster_path, precum si o proprietate care o sa fie din partea aplicatie laravel: internal_id - random string de lungimea de 10 caractere
-Ca si endpoint o sa folosesti https://developers.themoviedb.org/3/movies/get-movie-lists
-Poti folosi api key 31f815104ff2b0e3efd8998a8ecd6b28
-Endpointul final trebuie sa suporte paginare.
-----------------------------------------------------------------------------------------------
-## Mentiune
-
-https://developers.themoviedb.org/3/movies/get-movie-lists nu contine date valide,
-nu returneaza filme ci liste, care nu au descriere, nume si poster_path
-(https://api.themoviedb.org/3/movie/400160/lists?api_key=31f815104ff2b0e3efd8998a8ecd6b28&callback&language=en-US&page=1),
-si din cauza asta am folosit https://developers.themoviedb.org/3/movies/get-similar-movies
-
-- am mai adaugat cateva mici detalii la JSON, ca si numarul maxim de pagini etc.
-- pe index '/', am pus cateva linkuri catre API-ul generat de laravel, pt o accesare mai usoara.
+Get related movies from tmdb and rearrange JSON data to show paginated results

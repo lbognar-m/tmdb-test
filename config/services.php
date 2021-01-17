@@ -35,4 +35,5 @@ return [
         'baseurl' => env('TMDB_BASE_URL'),
     ],
 
+	
 ];

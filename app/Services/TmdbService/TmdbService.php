@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class TmdbService
 {
-	
+
 	protected $api_key;
 	protected $base_url;
 	protected $user_ip;

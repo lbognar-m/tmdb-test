@@ -15,4 +15,5 @@ use App\Http\Controllers\TmdbController;
 |
 */
 
+
 Route::get('/tmdb/{id?}/{page?}', [TmdbController::class, 'showSimilar']);
